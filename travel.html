@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Airway</title>
+    <link rel="stylesheet" href="travel.css">
+    <script src="https://kit.fontawesome.com/442cb25a89.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- section -->
+    <section id="container">
+        <header>
+            <div class="logo">
+                <p>Voyage</p>
+            </div>
+
+            <!-- menu responsive-->
+            <div class="menu-togle"></div>
+            <ul class="menu">
+                <li><a href="#container">acceuil</a></li>
+                <li><a href="#a-propos">à propos</a></li>
+                <li><a href="#galerie">destinations</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </header>
+        <div class="container-text">
+            <h1>Voyager , Une passion</h1>
+            <p>Rester c'est exister, mais voyager c'est vivre</p>
+            <a href="#">Réserver un vol</a>
+        </div>
+    </section>
+
+    <!-- section a propos-->
+    <section id="a-propos">
+        <div>
+            <p class="title-section">à propos</p>
+            <h1 class="sub-title-section"> Qui sommes nous</h1>
+            <div class="description-photo">
+                <div class="desc">
+                    <p>Ping Airways est la compagnie aérienne nationale belge et est basée à l'aéroport de Bruxelles Zaventem où elle dessert plus de 120 destinations en Europe, Amérique du Nord, Afrique et Asie. Elle travaille en partage de code avec de
+                        nombreuses compagnies aériennes internationales afin d'offrir des destinations supplémentaires à ses passagers. La compagnie est membre de l'Association internationale du transport aérien (IATA) ainsi que de la Star Alliance.</p>
+
+                    <h2>NOS SERVICES</h2>
+                    <div class="list-services">
+                        <div class="service">
+                            <i class="fa-sharp fa-solid fa-gauge-high"></i>
+                            <p>RAPIDE</p>
+                        </div>
+                        <div class="service">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <p>ECONOMIQUE</p>
+                        </div>
+                        <div class="service">
+                            <i class="fa-solid fa-check-double"></i>
+                            <p>FIABLE</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/image-descr.jpg" alt="Ville Superbe">
+            </div>
+        </div>
+    </section>
+
+    <!-- section galerie destination -->
+    <section id="galerie">
+        <p class="title-section">DESTINATION</p>
+        <h1 class="sub-title-section"> Pays au multiculturalisme </h1>
+        <div class="list-photos">
+            <div class="galerie-img">
+                <img src="images/Afrique.jpg" alt="">
+                <div class="show-country">
+                    <p>BENIN</p>
+                </div>
+            </div>
+            <div class="galerie-img">
+                <img src="images/chine.jpg" alt="">
+                <div class="show-country">
+                    <p>CHINE</p>
+                </div>
+            </div>
+            <div class="galerie-img">
+                <img src="images/Miami.jpg" alt="">
+                <div class="show-country">
+                    <p>MIAMI</p>
+                </div>
+            </div>
+            <div class="galerie-img">
+                <img src="images/moscou.jpg" alt="">
+                <div class="show-country">
+                    <p>MOSCOU</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact">
+        <p class="title-section">contact</p>
+        <h1 class="sub-title-section">formulaire de contact</h1>
+        <div>
+            <form action="">
+                <label>Adresse Mail</label>
+                <input type="text" placeholder="Ex: pingairways@gmail.com">
+                <label>Message</label>
+                <textarea name="" id="" cols="30" rows="10" :placeholder="Votre message..."></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+            <div class="sociale">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="images-contact">
+                <img src="images/image-contact.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright Emile Ping Fondateur Ping Airways</p>
+    </footer>
+
+    <script>
+        var menu_toggle = document.querySelector('header .menu-toggle');
+        var menu = document.querySelector('header .menu');
+        menu_toggle.onclick = function() {
+            menu_toggle.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+
+</body>
+
+</html>
